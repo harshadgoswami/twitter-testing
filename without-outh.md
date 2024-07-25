@@ -21,15 +21,13 @@ app.use(cors({ credentials: true }));
 const APP_ID = "29104066";
 
 const client = new TwitterApi({
-  appKey: "2Dyb99mf42l4RzUID1NM0HwWw",
-  appSecret: "DSjAzIPVtvlOxW5nVEbyRPxALILkKopIvuZ4m3QiwwMpRuBb05",
-  accessToken: "1768292164344193024-qUehniyR1xm8GxQ0moWG4gIrikP0UM",
-  accessSecret: "1CSePo5cYxXhjLcn83TDHRIWfk1EmeEC5WOHOoeALI9je",
+  appKey: "YOUR_API_KEY",
+  appSecret: "YOUR_APP_SECRET",
+  accessToken: "YOUR_ACCESS_TOKEN",
+  accessSecret: "YOUR_ACCESS_SECRET",
 });
 
-const bearer = new TwitterApi(
-  "AAAAAAAAAAAAAAAAAAAAAMIXvAEAAAAAu%2B9ZE4%2FLSO3rKUvd37CNMcEziWM%3DcM9KA2h2oyomofeYX9CnGwEL5170dbsYV0ty6PLbyP6FWAdmET"
-);
+const bearer = new TwitterApi("YOUR_BEARER_TOKEN");
 
 const twitterClient = client.readWrite;
 const twitterBearer = bearer.readOnly;
